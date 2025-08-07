@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { BrowserRouter } from "react-router";
 import Register from "../pages/auth/Register";
 import Login from "../pages/auth/Login";
 import Mentee from "../pages/profile/Mentee";
@@ -13,7 +12,7 @@ import Schedule from "../pages/Schedule";
 
 const AppRoutes = () => {
     return (
-      <BrowserRouter>
+
         <Routes>
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
@@ -25,7 +24,7 @@ const AppRoutes = () => {
           <Route path="/chat/:userId" element={<Chat />} />
           <Route path="/schedule/:userId" element={<Schedule />} />
         </Routes>
-      </BrowserRouter>
+  
     );
 }
 
