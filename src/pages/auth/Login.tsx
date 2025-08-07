@@ -18,8 +18,9 @@ const Login = () => {
          </h6>
        </div>
 
-       <div className=" flex flex-col  justify-center h-full px-6 items-center bg-blue-300 w-full">
-         <h2 className=" text-2xl md:text-4xl mx-18 font-semibold py-10 mt-12 mb-0 font-sans">
+       <div className=" flex flex-col justify-center h-full px-6 items-center bg-blue-300 w-full shadow-md rounded-lg">
+        <div className="bg-blue-300 rounded-xl shadow-md p-8 w-full max-w-md">
+         <h2 className="text-lg md:text-4xl py-5 mt-8 font-semibold font-sans whitespace-nowrap text-center tracking-wider">
            Welcome back! Login
          </h2>
 
@@ -49,6 +50,7 @@ const Login = () => {
              <Link to="/register" className="text-blue-700 underline">
                Signup
              </Link>
+             
            </div>
 
            <button
@@ -58,6 +60,7 @@ const Login = () => {
              Login
            </button>
          </form>
+         </div>
        </div>
      </div>
    );
